@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-menu{
+    @apply flex items-center justify-center gap-5;
+}
+
+.list-item{
+    @apply cursor-pointer font-medium text-brown-dark hover:text-orange-dark transition-colors pb-1;
+}
+
+.active{
+    @apply text-orange-dark  after:block after:w-2/5 after:h-[3px] after:bg-orange-dark after:rounded;
+}
+
+.actionBtns{
+    @apply flex items-center text-sm;
+}
+
+.btn{
+    @apply px-6 py-2 rounded-full;
+}
+
+.btn-primary{
+    @apply text-white bg-orange-dark shadow-lg shadow-orange-light/25 hover:bg-orange-500 focus:ring focus:ring-orange-200 focus:outline-none;
+}
+
+.icons{
+    @apply flex items-center gap-2 pl-3;
+}
+
+.icon{
+    @apply h-5 w-5 cursor-pointer;
+}
+
+.banner-left{
+    @apply relative py-2.5 w-[46%] left-0;
+}
+
+.banner-right{
+    @apply w-[37%] relative right-0
+}
+
